@@ -53,7 +53,7 @@ The completed assignment is deployed and available at https://bjwong3.github.io/
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the application
+   Navigate to `http://localhost:5173/spidr-coding-challenge/` to view the application
 
 ## 🔧 Development
 
