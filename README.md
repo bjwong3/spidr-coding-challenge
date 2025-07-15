@@ -23,6 +23,10 @@ The application includes the following form fields:
 - **TypeScript** - Type-safe JavaScript Programming Language
 - **Vite** - Fast build tool and development server
 
+## Deployment
+
+The completed assignment is deployed and available at https://bjwong3.github.io/spidr-coding-challenge/
+
 ## Getting Started
 
 ### Prerequisites
