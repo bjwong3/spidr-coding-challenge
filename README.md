@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# Spidr Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based project submission building an interest form component designed for Spidr Design's new air fryer landing page.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a single-page React application that contains an interest form for Spidr Design's fictitious new air fryer product. The form captures customer information and demonstrates the ability to create user interfaces that align with a brand's visual identity.
 
-## Expanding the ESLint configuration
+## 📋 Form Fields
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application includes the following form fields:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **First Name** - Required text input
+2. **Last Name** - Required text input  
+3. **Phone Number** - Required, auto-formatted as (XXX) XXX-XXXX
+4. **Email Address** - Required, with email validation
+5. **Cost Guess** - Required dollar amount input for guessing the air fryer's price
+6. **16-digit PIN** - Required, auto-formatted as ####-####-####-####
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Technology Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React 19.1.0** - Component-based library for building UI
+- **TypeScript** - Type-safe JavaScript Programming Language
+- **Vite** - Fast build tool and development server
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd spidr-coding-challenge
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application
+
+## 🔧 Development
+
+### Project Structure
+
+```
+src/
+├── App.tsx          # Main form component
+├── App.css          # Styling based off Spidr brand
+├── main.tsx         # Application entry point
+└── index.css        # Global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is created for Spidr Design's coding challenge.
